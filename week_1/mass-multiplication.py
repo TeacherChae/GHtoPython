@@ -1,9 +1,6 @@
 # ! python3
 # venv: HakLeeGHStudy
 from typing import Union, Optional
-import numpy as np
-
-c = np.zeros(shape=[3,3])
 
 def make_number(input_list:list[Optional[int]])->list[Union[int, float]]:
     number_list = []

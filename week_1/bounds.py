@@ -1,18 +1,11 @@
 # ! python3
 # venv: HakLeeGHStudy
-from typing import Union, Optional
 
-def make_number(input_list:list[Optional[int]])->list[Union[int, float]]:
-    number_list = []
-    for element in input_list:
-        try:
-            number_list.append(int(element))
-        except ValueError:
-            try:
-                number_list.append(float(element))
-            except:
-                raise ValueError
-    return number_list
+import Rhino.Geometry as rg # 이건 pip install로 설치 못하나...
+from src.utility.core import make_number
+
+print(type(I).__dict__.keys())
+
 modified_input = make_number(N)
 
-domain = ' To '.join(map(str, [min(modified_input), max(modified_input)]))
+domain = rg.Interval(min(modified_input), max(modified_input))

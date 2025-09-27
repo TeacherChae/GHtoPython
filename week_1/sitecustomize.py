@@ -7,7 +7,6 @@
 import sys
 from pathlib import Path
 
-# 네 프로젝트의 src 절대경로 (Windows 경로 그대로)
 PROJ_SRC = Path(r"D:\Keon Chae\Workshop\HakLeeGHStudy")
 
 if PROJ_SRC.exists():
